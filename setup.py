@@ -23,7 +23,7 @@ __version__ = m.group(1)
 
 srcdir = dirname(abspath(__file__))
 
-print "running setup for html2rest version %s" % __version__
+print("running setup for html2rest version %s" % __version__)
 
 
 
@@ -47,5 +47,8 @@ setup(
         scripts = [
             pathjoin(srcdir, 'bin', 'html2rest'),
         ],
+        install_requires = [
+            'sgmllib3k',
+        ]
 )
     

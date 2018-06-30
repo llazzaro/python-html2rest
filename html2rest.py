@@ -27,9 +27,9 @@ import sys
 import os
 import re
 from sgmllib import SGMLParser
-from StringIO import StringIO
+from io import StringIO
 from textwrap import TextWrapper
-from urllib2 import urlparse
+from urllib.parse import urlparse
 
 CODEBLOCK = '::'
 BLOCKTAGS = ['div', 'blockquote']
